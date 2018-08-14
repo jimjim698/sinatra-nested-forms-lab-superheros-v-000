@@ -8,6 +8,13 @@
   <body>
 
   <h2> team name </h2>  <h3><%=@team.name %></h3>
+
+  <% @heroes.each do |hero|%>
+
+  <%= hero.name %>
+  <%= hero.power %>
+  <%= hero.bio %>
+  <%end%>
     
   </body>
 </html>
